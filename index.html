@@ -11,14 +11,18 @@
         <link rel="apple-touch-icon" href="other/images/logo.ico">
         <link rel="icon" href="other/images/logo.ico">
     </head>
-    <body>
-        <h1>This is an html template</h1>
-        <p>Click buttons to change color background</p>
-        <br>
-        <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
-        <button type="button" onclick="changeBodyBg('lime');">Lime</button>
-        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
-        <button type="button" onclick="changeBodyBg('rgb(90, 90, 90)');">Default</button>
+    <body onload="drawShapes(3);">
+        <div class="container">
+            <div class="view" hidden></div>
+            <canvas id="canvas" width="1000" height="700"></canvas>
+        </div>
+        
+        <div class="box">
+            <div class="calc text-center">
+            <h2 id="test_status"></h2>
+            <div id="test"></div>
+            </div>
+        </div>
 
         <script src="script.js"></script>
     </body>
